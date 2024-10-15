@@ -230,6 +230,7 @@ img {
 	z-index: 1;
 	overflow-x: hidden;
 	padding-top: 80px ;
+	min-height: 100vh;
 }
 .home-section .home-text,
 .home-section .home-image
