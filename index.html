@@ -95,137 +95,91 @@
 
 	<!--service section awal -->
 	<section class="service-section section-padding" id="portfolio">
-		<div class="container">
-			<div class="row">
-				<div class="section-title text-align">
-					<h5 class="sub-title">Portfolio</h5>
-					<h3 class="main-title">Portfolio I Provide</h3>
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				
-				<!-- -======= portfolio start ======== -->
-				<div class="service-item" onclick="window.location.href='https://anangml.github.io/Login-Page/';">
-					<div class="service-item-inner">
-						<div class="icon">
-							<i class="fas fa-mobile-alt"> </i>
-						</div>
-						<h3> Login Page Desain </h3>
-						<p> Ini projek Login Page saya </p>
-						
-					</div>
-				</div>
-				<!-- -======= portfolio end ======== -->
-				<!-- -======= portfolio start ======== -->
-				<div class="service-item" onclick="window.location.href='https://anangml.github.io/kalkulator/';">
-					<div class="service-item-inner">
-						<div class="icon">
-							<i class="fas fa-laptop-code"> </i>
-						</div>
-						<h3> Kalkulator </h3>
-						<p>Ini projek kalkulator saya</p>
-					</div>
-				</div>
-				<!-- -======= portfolio end ======== -->
-				<!-- -======= portfolio start ======== -->
-				<div class="service-item" onclick="window.location.href='https://www.sololearn.com/certificates/CC-SZ33BWXR';">
-					<div class="service-item-inner">
-						<div class="icon">
-							<i class="fa-brands fa-html5"></i>
-						</div>
-						<h3> Sertifikat HTML </h3>
-						<p> Ini sertifikat HTML saya</p>
-					</div>
-				</div>
-				<!-- -======= portfolio end ======== -->
-				<!-- -======= portfolio start ======== -->
-				<div class="service-item" onclick="window.location.href='https://www.sololearn.com/certificates/CC-SZ33BWXR';">
-					<div class="service-item-inner">
-						<div class="icon">
-							<i class="fa-brands fa-css3-alt"></i>
-						</div>
-						<h3> Sertifikat CSS </h3>
-						<p> Ini sertifikat CSS saya</p>
-					</div>
-				</div>
-				<!-- -======= portfolio end ======== -->
-				<!-- -======= portfolio start ======== -->
-				<div class="service-item" onclick="window.location.href='https://www.sololearn.com/certificates/CC-V7TDPPI4';">
-					<div class="service-item-inner">
-						<div class="icon">
-							<i class="fa-brands fa-js"></i>
-						</div>
-						<h3> Sertifikat Java </h3>
-						<p> Ini sertifikat Java saya</p>
-					</div>
-				</div>
-				<!-- -======= portfolio end ======== -->
-				<!-- -======= portfolio start ======== -->
-				<div class="service-item" onclick="window.location.href='https://anangml.github.io/Dashboard/';">
-					<div class="service-item-inner">
-						<div class="icon">
-							<i class='bx bxs-dashboard'></i>
-						</div>
-						<h3> Dashboard </h3>
-						<p>Ini projek Dasboard saya</p>
-					</div>
-				</div>
-				<!-- -======= portfolio end ======== -->
-				<!-- -======= portfolio start ======== -->
-				<div class="service-item" onclick="window.location.href='https://anangml.github.io/tetris/';">
-					<div class="service-item-inner">
-						<div class="icon">
-							<i class="fas fa-mobile-alt"> </i>
-						</div>
-						<h3> Game Tetris </h3>
-						<p> Projek game tetris </p>
-						
-					</div>
-				</div>
-				<!-- -======= portfolio end ======== -->
-				<!-- -======= portfolio start ======== -->
-				<div class="service-item" onclick="window.location.href='https://api2.sololearn.com/v2/certificates/CC-5NYLAJGQ/image/jpg?t=638701135391651830';">
-					<div class="service-item-inner">
-						<div class="icon">
-							<i class="fa-brands fa-js"></i>
-						</div>
-						<h3> Sertifikat Intermediate JS </h3>
-						<p> Ini sertifikat Intermediate JS saya</p>
-					</div>
-				</div>
-				<!-- -======= portfolio end ======== -->
-				<!-- -======= portfolio start ======== -->
-				<div class="service-item" onclick="window.location.href='https://anangml.github.io/tugas-pertemuan-20/';">
-					<div class="service-item-inner">
-						<div class="icon">
-							<i class="fa-brands fa-js"></i>
-						</div>
-						<h3> Tugas Pertemuan 20 </h3>
-						<p> </p>
-					</div>
-				</div>
-				<!-- -======= portfolio end ======== -->
-				<!-- -======= portfolio start ======== -->
-				<!--<div class="service-item" onclick="window.location.href='https://anangml.github.io/Anangmap/';">
-					<div class="service-item-inner">
-						<div class="icon">
-							<i class="fa-solid fa-map"></i>
-						</div>
-						<h3> Maps Anang </h3>
-						<p> </p>
-					</div>
-				</div>
-				<!-- -======= portfolio end ======== -->
-				
+    <div class="container">
+        <div class="section-title text-align">
+            <h5 class="sub-title">Portfolio</h5>
+            <h3 class="main-title">Portfolio I Provide</h3>
+        </div>
 
-			</div>
-		</div>
-	</section>
+        <!-- Filter Buttons -->
+        <div class="filter-menu">
+            <button class="filter-btn" onclick="filterPortfolio('all')">Semua</button>
+            <button class="filter-btn" onclick="filterPortfolio('certificate')">Sertifikat</button>
+            <button class="filter-btn" onclick="filterPortfolio('project')">Projek</button>
+        </div>
+
+        <!-- Portfolio Items -->
+        <div class="row portfolio-items">
+            <!-- Sertifikat -->
+            <div class="service-item certificate">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fa-brands fa-html5"></i></div>
+                    <h3>Sertifikat HTML</h3>
+                    <p>Sertifikat HTML saya</p>
+                </div>
+            </div>
+            <div class="service-item certificate">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fa-brands fa-css3-alt"></i></div>
+                    <h3>Sertifikat CSS</h3>
+                    <p>Sertifikat CSS saya</p>
+                </div>
+            </div>
+            <div class="service-item certificate">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fa-brands fa-js"></i></div>
+                    <h3>Sertifikat Java</h3>
+                    <p>Sertifikat Java saya</p>
+                </div>
+            </div>
+            <div class="service-item certificate">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fa-brands fa-js"></i></div>
+                    <h3>Sertifikat Intermediate JS</h3>
+                    <p>Sertifikat Intermediate JS saya</p>
+                </div>
+            </div>
+
+            <!-- Projek -->
+            <div class="service-item project">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Login Page</h3>
+                    <p>Projek Login Page saya</p>
+                </div>
+            </div>
+            <div class="service-item project">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Kalkulator</h3>
+                    <p>Projek Kalkulator saya</p>
+                </div>
+            </div>
+            <div class="service-item project">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="bx bxs-dashboard"></i></div>
+                    <h3>Dashboard</h3>
+                    <p>Projek Dashboard saya</p>
+                </div>
+            </div>
+            <div class="service-item project">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Game Tetris</h3>
+                    <p>Projek Game Tetris saya</p>
+                </div>
+            </div>
+            <div class="service-item project">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fa-brands fa-js"></i></div>
+                    <h3>Tugas Pertemuan 20</h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 
@@ -249,6 +203,29 @@
 
 	<!-- javascript -->
 	<script src="porto.js"></script>
+	<script>
+    function filterPortfolio(category) {
+        const items = document.querySelectorAll('.service-item');
+        items.forEach(item => {
+            if (category === 'all') {
+                item.style.display = 'block';
+            } else if (item.classList.contains(category)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+
+        // Update active button
+        const buttons = document.querySelectorAll('.filter-btn');
+        buttons.forEach(btn => btn.classList.remove('active'));
+        document.querySelector(`[onclick="filterPortfolio('${category}')"]`).classList.add('active');
+    }
+
+    // Set default filter
+    filterPortfolio('all');
+</script>
+
 
 </body>
 </html>
